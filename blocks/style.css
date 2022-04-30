@@ -1,4 +1,6 @@
-div{
+@import url('../fonts/Inter Web/inter.css');
+
+div, section, header, main, footer{
     border:1px solid red;
 }
 
@@ -12,6 +14,10 @@ div{
     justify-content: center;
     margin: 34px auto 90px;
     width: 21%;
+}
+
+.logo img{
+    width: 100%;
 }
 
 .lead{
@@ -50,7 +56,7 @@ div{
 }
 
 .lead__image{
-    width: 984px;
+    width: 100%;
 }
 
 .intro{
@@ -215,6 +221,8 @@ div{
     height: 48px;
     background: #0278FE;
     border-radius: 4px;
+    text-decoration: none;
+    padding: 13px 20px;
 
     font-family: 'Inter', 'sans-serif';
     font-style: normal;
@@ -222,15 +230,17 @@ div{
     font-size: 18px;
     line-height: 22px;
     /* identical to box height */
-
-
     color: #FFFFFF;
 }
 
 .cover{
+    display: flex;
+    justify-content: center;
+    align-content: center;
     width: 92.5%;
     margin: 0 auto 92px;
 }
+
 
 .cover__image{
     width: 100%;
@@ -253,13 +263,62 @@ div{
 }
 
 @media screen and (min-width: 524px) and (max-width: 992px){
-    div{
+    div, section, header, main, footer{
     border:1px solid blue;
+    }
+
+    .page{
+        min-width: 768px;
+    }
+
+    .lead{
+        width: 94%;
+    }
+
+    .intro{
+        margin-right: 24px;
+        margin-left: 24px;
+        max-width: 94%;
+    }
+
+    .intro__title{
+        width: 100%;
+    }
+
+    .intro__text_sup, .intro__text_quote, .intro__text_inf{
+        width: 100%
+    }
+
+    .photo-grid{
+        width: 94%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .places{
+        width: 94%;
+        margin: 0 auto 92px;
+    }
+
+    .place__image{
+        max-width: 340px;
+    }
+
+    .place__title{
+        max-width: 340px;
+    }
+
+    .place__paragraph{
+        font-size: 16px;
+    }
+
+    .cover{
+        width: 100%;
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 523px){
-    div{
+    div, section, header, main, footer{
     border:1px solid green;
     }
 }
