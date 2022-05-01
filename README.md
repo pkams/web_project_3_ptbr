@@ -1,19 +1,14 @@
-# Projeto 3: De Pátria para Pátria
-### Visão geral    
-* Introdução  
-* Figma  
-* Imagens  
-  
-**Introdução**    
-  
-Este é um projeto que mostra as cidades de origem de alguns funcionários do Practicum. Fizemos isso para que todos os elementos sejam exibidos corretamente em tamanhos de tela populares. Recomendamos investir mais tempo na conclusão deste projeto, pois é mais difícil do que os anteriores.  
-  
-**Figma**  
-  
-* [Link para o projeto no Figma](https://www.figma.com/file/1zCYcflj6BJx5VqOvXU9nb/Sprint-3-From-Homeland-to-Homeland-desktop-mobile?node-id=0%3A1)  
-  
-**Imagens**  
-  
-A maneira como você fará isso no trabalho é exportando imagens diretamente do Figma — recomendamos fazer isso para praticar mais. Não se esqueça de otimizá-los [aqui](https://tinypng.com/), para que seu projeto carregue mais rápido. 
-  
-Boa sorte e divirta-se!   
+# Projeto 3 do Bootcamp Web Dev da Yandex by Practicum
+## Projeto 3 - De Pátria para Pátria
+
+> Site de página única feito utilizando HTML + CSS para estudos de todo conteúdo básico de ambas as ferramentas, visando entendimento de manipulação de classes, estrutura de projeto e metodologia de organização BEM, etc.
+> Neste projeto 3 foi adicionada a complexidade adicionando responsividade a página, sendo necessária a adequação para 3 tipos de tamanhos de telas: 1280px, 768px e 320px.
+> O resultado pode ser visto em:  
+
+### Ajustes e melhorias
+
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
+
+- [ ] Incorporar ações e interatividade utilizando Javascript.
+- [ ] Backend utilizando JS ou outra tecnologia similar (Python por ex, utilizando Flask ou Django)
+- [ ] Deploy do site interativo em cloud (AWS/Heroku/Etc)
