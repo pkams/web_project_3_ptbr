@@ -1,8 +1,10 @@
 @import url('../fonts/Inter Web/inter.css');
 
+/*
 div, section, header, main, footer{
     border:1px solid red;
 }
+*/
 
 .page{
     min-width: 1280px;
@@ -10,14 +12,16 @@ div, section, header, main, footer{
 }
 
 .logo{
+    position: relative;
     display: flex;
     justify-content: center;
-    margin: 34px auto 90px;
-    width: 21%;
+    align-content: center;
+    width: 100%;
 }
 
-.logo img{
-    width: 100%;
+.logo__image{
+    margin: 32px auto 90px;
+    width: 270px;
 }
 
 .lead{
@@ -25,7 +29,7 @@ div, section, header, main, footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 77%;
+    max-width: 77%;
     margin: 0 auto 92px;
 }
 
@@ -60,7 +64,7 @@ div, section, header, main, footer{
 }
 
 .intro{
-    width: 1017px;
+    width: 80%;
     margin: 0px 7% 92px 12%;
 }
 
@@ -108,8 +112,8 @@ div, section, header, main, footer{
 .photo-grid{
     display: grid;
     width: 92.5%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     margin: 0 auto 92px;
     grid-gap: 16px;
 }
@@ -231,9 +235,15 @@ div, section, header, main, footer{
     line-height: 22px;
     /* identical to box height */
     color: #FFFFFF;
+    transition: background-color 0.3s ease-in;
 }
 
+.place__frame:hover{
+        background-color: #0063D2;
+    }
+
 .cover{
+    position: relative;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -241,6 +251,82 @@ div, section, header, main, footer{
     margin: 0 auto 92px;
 }
 
+.cover__group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    z-index: 3;
+    row-gap:32px;
+}
+
+.cover__title{
+    font-family: 'Inter', 'sans-serif';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 1.06;
+    /* identical to box height, or 106% */
+    text-align: center;
+    color: #FFFDFD;
+    margin: 0 auto;
+}
+
+.cover__subtitle{
+    font-family: 'Inter', 'sans-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    /* or 122% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+    margin: 0 auto;
+    white-space: pre;
+}
+
+.cover__frame{
+    grid-area: button;
+    width: 191px;
+    height: 48px;
+    background: #0278FE;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 13px 20px;
+
+    font-family: 'Inter', 'sans-serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #FFFFFF;
+    margin: 0 auto;
+    transition: background-color 0.3s ease-in;
+}
+
+.cover__frame:hover{
+        background-color: #0063D2;
+    }
+
+
+.cover__overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #2A2C2F;
+    opacity: 0.3;
+    transition: opacity 0.5s ease-in;
+}
+
+.cover:hover > .cover__overlay{
+    opacity: 0.8;
+}
 
 .cover__image{
     width: 100%;
@@ -263,22 +349,22 @@ div, section, header, main, footer{
 }
 
 @media screen and (min-width: 524px) and (max-width: 992px){
-    div, section, header, main, footer{
+
+    /*div, section, header, main, footer{
     border:1px solid blue;
-    }
+    }*/
 
     .page{
         min-width: 768px;
     }
 
     .lead{
-        width: 94%;
+        width: 100%;
     }
 
     .intro{
-        margin-right: 24px;
-        margin-left: 24px;
-        max-width: 94%;
+        margin: 0 auto;
+        min-width: 95%;
     }
 
     .intro__title{
@@ -291,8 +377,8 @@ div, section, header, main, footer{
 
     .photo-grid{
         width: 94%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 4fr);
     }
 
     .places{
@@ -317,8 +403,142 @@ div, section, header, main, footer{
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 523px){
-    div, section, header, main, footer{
+@media screen and (max-width: 523px){
+    /*div, section, header, main, footer{
     border:1px solid green;
+    }*/
+
+    .page{
+        min-width: 320px;
+    }
+
+    .logo__image{
+        margin: 20px auto 50.15px;
+        width:200px;
+    }
+
+    .lead{
+        width: 100%
+    }
+
+    .lead__title{
+        font-size: 40px;
+        line-height: 1.1;
+        width: 95%;
+    }
+
+    .lead__subtitle{
+        font-size: 16px;
+        line-height: 1.1;
+        width: 95%;
+    }
+
+    .intro{
+        margin: 0 auto 38px;
+        min-width: 95%;
+    }
+
+    .intro__title{
+        font-size: 32px;
+        line-height: 1.09;
+        width: 100%;
+    }
+
+    .intro__text_sup{
+        font-size: 24px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .intro__text_quote{
+        font-size: 24px;
+        width: 100%;
+    }
+
+    .intro__text_inf{
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .photo-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 1fr);
+    }
+
+    .places{
+        width: 100%;
+        margin: 0 0 64px;
+    }
+
+    .place{
+        display: flex;
+        row-gap: 30px;
+        flex-direction: column;
+
+        width: 100%;
+        /*height: 756px;*/
+    }
+
+    .place__title{
+        font-size: 32px;
+        line-height: 1.09;
+        min-width: 95%;
+        margin: 0 auto;
+    }
+
+    .place__website{
+        position: relative;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+
+    .place__image{
+        position: relative;
+        min-width: 100%;
+    }
+
+    .place__paragraph{
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    .place__frame{
+        width: 288px;
+        height: 48px;
+        font-size: 14px;
+        line-height: 17px;
+        align-self: center;
+    }
+
+
+
+    .cover{
+        margin: 0 0 64px;
+        width: 100%;
+    }
+
+    .cover__group{
+        row-gap:16px;
+    }
+
+    .cover__title{
+        font-size: 32px;
+        line-height: 1.09;
+    }
+
+    .cover__subtitle{
+        font-size: 14px;
+        line-height: 1.14;
+        /* or 114% */
+    }
+
+    .cover__frame{
+        width: 191px;
+        height: 48px;
+    }
+
+    .footer_copyright{
+        line-height: 1;
     }
 }
