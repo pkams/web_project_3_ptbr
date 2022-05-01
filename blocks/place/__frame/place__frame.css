@@ -1,0 +1,33 @@
+.place__frame{
+    grid-area: button;
+    width: 355px;
+    height: 48px;
+    background: #0278FE;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 13px 20px;
+
+    font-family: 'Inter', 'sans-serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #FFFFFF;
+    transition: background-color 0.3s ease-in;
+}
+
+.place__frame:hover{
+        background-color: #0063D2;
+    }
+
+@media screen and (max-width: 523px){
+
+    .place__frame{
+        width: 288px;
+        height: 48px;
+        font-size: 14px;
+        line-height: 17px;
+        align-self: center;
+    }
+}

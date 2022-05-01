@@ -1,0 +1,31 @@
+.cover__frame{
+    grid-area: button;
+    width: 191px;
+    height: 48px;
+    background: #0278FE;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 13px 20px;
+
+    font-family: 'Inter', 'sans-serif';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #FFFFFF;
+    margin: 0 auto;
+    transition: background-color 0.3s ease-in;
+}
+
+.cover__frame:hover{
+        background-color: #0063D2;
+}
+
+@media screen and (max-width: 523px){
+
+    .cover__frame{
+        width: 191px;
+        height: 48px;
+    }
+}
