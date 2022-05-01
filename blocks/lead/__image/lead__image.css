@@ -1,15 +1,15 @@
 .lead__image{
-    width: 100%;
+    max-width: 100%;
 }
 
 @media screen and (min-width: 524px) and (max-width: 992px) {
     .lead__image {
-        width: 100%;
+        max-width: 100%;
     }
 }
 
 @media screen and (max-width: 523px){
     .lead__image{
-        width: 100%;
+        max-width: 100%;
     }
 }

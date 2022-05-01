@@ -1,7 +1,7 @@
 .place__frame{
     grid-area: button;
-    width: 355px;
-    height: 48px;
+    min-width: 355px;
+    min-height: 48px;
     background: #0278FE;
     border-radius: 4px;
     text-decoration: none;
@@ -24,8 +24,8 @@
 @media screen and (max-width: 523px){
 
     .place__frame{
-        width: 288px;
-        height: 48px;
+        min-width: 288px;
+        min-height: 48px;
         font-size: 14px;
         line-height: 17px;
         align-self: center;

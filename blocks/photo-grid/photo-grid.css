@@ -11,7 +11,7 @@
 
 
     .photo-grid{
-        width: 94%;
+        max-width: 94%;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 4fr);
     }

@@ -1,7 +1,7 @@
 .places{
     display: flex;
     flex-direction: column;
-    width: 75%;
+    max-width: 75%;
     margin: 0 12% 92px;
     justify-content: center;
     row-gap: 80px;
@@ -10,14 +10,14 @@
 @media screen and (min-width: 524px) and (max-width: 992px) {
 
     .places {
-        width: 94%;
+        max-width: 94%;
         margin: 0 auto 92px;
     }
 }
 
 @media screen and (max-width: 523px){
     .places{
-        min-width: 90%;
+        max-width: 90%;
         margin: 0 auto 64px;
     }
 }

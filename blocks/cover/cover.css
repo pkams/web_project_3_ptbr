@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 92.5%;
+    max-width: 92.5%;
     margin: 0 auto 92px;
 }
 
@@ -14,7 +14,7 @@
 @media screen and (min-width: 524px) and (max-width: 992px){
 
     .cover{
-        width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -23,6 +23,6 @@
 
     .cover{
         margin: 0 0 64px;
-        width: 100%;
+        max-width: 100%;
     }
 }

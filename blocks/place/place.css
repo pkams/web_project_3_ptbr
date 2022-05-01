@@ -4,7 +4,7 @@
     grid-column-gap: 40px;
 
     flex-direction: column;
-    width: 100%;
+    min-width: 100%;
     /*height: 756px;*/
 
     grid-template: "title website" auto
@@ -21,7 +21,7 @@
         row-gap: 30px;
         flex-direction: column;
 
-        width: 100%;
+        min-width: 100%;
         /*height: 756px;*/
     }
 }

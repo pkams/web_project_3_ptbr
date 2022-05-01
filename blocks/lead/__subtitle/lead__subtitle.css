@@ -8,7 +8,7 @@
     text-align: center;
     margin: 32px auto 64px;
     color: #FFFFFF;
-    width: 73%;
+    max-width: 73%;
 }
 
 @media screen and (min-width: 524px) and (max-width: 992px) {
@@ -21,7 +21,7 @@
     .lead__subtitle {
         font-size: 16px;
         line-height: 1.1;
-        width: 95%;
+        max-width: 95%;
         margin: 40px auto 60px;
     }
 }
