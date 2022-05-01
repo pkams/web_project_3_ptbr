@@ -435,7 +435,7 @@ div, section, header, main, footer{
 
     .intro{
         margin: 0 auto 38px;
-        min-width: 95%;
+        min-width: 90%;
     }
 
     .intro__title{
@@ -463,11 +463,12 @@ div, section, header, main, footer{
     .photo-grid{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 1fr);
+        max-width: 90%;
     }
 
     .places{
-        width: 100%;
-        margin: 0 0 64px;
+        min-width: 90%;
+        margin: 0 auto 64px;
     }
 
     .place{
