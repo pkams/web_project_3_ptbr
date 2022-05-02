@@ -12,6 +12,7 @@
     .places {
         max-width: 94%;
         margin: 0 auto 92px;
+        row-gap: 46px;
     }
 }
 
@@ -19,5 +20,6 @@
     .places{
         max-width: 90%;
         margin: 0 auto 64px;
+        row-gap: 37px;
     }
 }
