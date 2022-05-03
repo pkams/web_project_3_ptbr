@@ -1,7 +1,7 @@
 .place__frame{
     grid-area: button;
-    max-width: 355px;
-    max-height: 48px;
+    width: 355px;
+    height: 48px;
     background: #0278FE;
     border-radius: 4px;
     text-decoration: none;
@@ -15,6 +15,7 @@
     /* identical to box height */
     color: #FFFFFF;
     transition: background-color 0.3s ease-in;
+    box-sizing: border-box;
 }
 
 .place__frame:hover{

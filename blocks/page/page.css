@@ -1,17 +1,20 @@
 .page{
     background-color: #2A2C2F;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @media screen and (min-width: 524px) and (max-width: 992px){
 
     .page{
-        min-width: 768px;
+        max-width: 992px;
     }
 }
 
 
 @media screen and (max-width: 523px) {
     .page {
-        min-width: 320px;
+        max-width: 523px;
     }
 }

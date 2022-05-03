@@ -1,7 +1,7 @@
 .cover__frame{
     grid-area: button;
-    max-width: 191px;
-    max-height: 48px;
+    width: 191px;
+    height: 48px;
     background: #0278FE;
     border-radius: 4px;
     text-decoration: none;
@@ -16,6 +16,7 @@
     color: #FFFFFF;
     margin: 0 auto;
     transition: background-color 0.3s ease-in;
+    box-sizing: border-box;
 }
 
 .cover__frame:hover{
