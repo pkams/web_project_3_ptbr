@@ -3,7 +3,7 @@
     line-height: 1.42;
     /* identical to box height, or 142% */
     text-align: right;
-    margin: 0 0 42px;
+    margin: 0 0 32px;
 }
 
 @media screen and (min-width: 524px) and (max-width: 992px){
@@ -11,6 +11,7 @@
 
     .intro__text_quote{
         max-width: 100%;
+
     }
 }
 
@@ -19,5 +20,6 @@
     .intro__text_quote{
         font-size: 24px;
         max-width: 100%;
+        margin-bottom: 18px;
     }
 }

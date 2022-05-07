@@ -12,5 +12,6 @@
     .place__website{
         max-width: 95%;
         margin: 0;
+        justify-content: start;
     }
 }

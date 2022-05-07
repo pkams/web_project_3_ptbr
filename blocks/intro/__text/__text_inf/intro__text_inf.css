@@ -1,14 +1,13 @@
 .intro__text_inf{
     font-size: 16px;
-    line-height: 163%;
-    /* or 26px */
+    line-height: 1.63;
 }
 
 @media screen and (min-width: 524px) and (max-width: 992px){
 
 
     .intro__text_inf{
-        max-width: 100%;
+        max-width: 98%;
     }
 }
 
@@ -16,7 +15,6 @@
 
 
     .intro__text_inf{
-        font-size: 16px;
         max-width: 100%;
     }
 }

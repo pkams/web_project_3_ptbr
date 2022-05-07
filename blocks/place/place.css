@@ -4,16 +4,27 @@
     grid-column-gap: 40px;
 
     flex-direction: column;
-    min-width: 100%;
-    /*height: 756px;*/
+    min-width: 95%;
 
-    grid-template: "title website" auto
-                   "image paragraphs" auto
-                   "button ." auto;
+    grid-template: "title website"
+                   "image paragraphs"
+                   "button paragraphs"
+                   ".       paragraphs";
 
 }
 
-@media screen and (max-width: 523px){
+@media screen and (min-width: 720px) and (max-width: 992px){
+    .place{
+        grid-template: "title website" auto
+                       "image paragraphs" auto
+                       "button paragraphs" auto
+                       ".      paragraphs" auto;
+        grid-column-gap: 28px;
+    }
+
+}
+
+@media screen and (max-width: 720px){
 
 
     .place{

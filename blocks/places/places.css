@@ -1,22 +1,22 @@
 .places{
     display: flex;
     flex-direction: column;
-    max-width: 75%;
+    min-width: 75%;
     margin: 0 12% 92px;
     justify-content: center;
     row-gap: 80px;
 }
 
-@media screen and (min-width: 524px) and (max-width: 992px) {
+@media screen and (min-width: 720px) and (max-width: 1180px) {
 
     .places {
-        max-width: 94%;
-        margin: 0 auto 92px;
+        max-width: 96%;
+        margin: 0 auto 72px;
         row-gap: 46px;
     }
 }
 
-@media screen and (max-width: 523px){
+@media screen and (max-width: 720px){
     .places{
         max-width: 90%;
         margin: 0 auto 64px;
