@@ -1,11 +1,15 @@
 .logo__image{
-    margin: 32px auto 90px;
+    margin: 0 auto 90px;
     max-width: 270px;
+    display: flex;
+    padding-top: 32px;
 }
 
 @media screen and (max-width: 523px) {
     .logo__image {
-        margin: 20px auto 50.15px;
+        margin: 0 auto 50.15px;
         max-width: 200px;
+        display: flex;
+    padding-top: 20px;
     }
 }
