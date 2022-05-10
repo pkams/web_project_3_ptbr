@@ -1,7 +1,15 @@
 .logo{
-    position: relative;
+    margin: 0 auto 90px;
+    max-width: 270px;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    max-width: 100%;
+    padding-top: 32px;
+}
+
+@media screen and (max-width: 523px) {
+    .logo {
+        margin: 0 auto 50.15px;
+        max-width: 200px;
+        display: flex;
+        padding-top: 20px;
+    }
 }
